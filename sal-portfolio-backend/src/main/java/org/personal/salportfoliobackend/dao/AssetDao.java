@@ -9,8 +9,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public class AssetDaoImpl implements CommonDao<Asset> {
+@Repository("assetDao")
+public class AssetDao implements CommonDao<Asset> {
     
     @Autowired
     JdbcTemplate jdbcTemplate;

@@ -48,7 +48,7 @@ public class UserDao implements CommonDao<User> {
                 user = userMapper.mapRow(rs, orderIdx);
             }
             
-            Asset asset = AssetDaoImpl.assetMapper.mapRow(rs, orderIdx);
+            Asset asset = AssetDao.assetMapper.mapRow(rs, orderIdx);
             
             if (asset != null) {
                 user.addAsset(asset);
@@ -72,7 +72,7 @@ public class UserDao implements CommonDao<User> {
                 users.add(currentUser);
             }
             
-            Asset asset = AssetDaoImpl.assetMapper.mapRow(rs, orderIdx);
+            Asset asset = AssetDao.assetMapper.mapRow(rs, orderIdx);
             
             if (asset != null) {
                 currentUser.addAsset(asset);
