@@ -1,4 +1,4 @@
-package org.personal.salportfoliobackend.home.controller;
+package org.personal.salportfoliobackend.admin.controller;
 
 import java.net.URI;
 
